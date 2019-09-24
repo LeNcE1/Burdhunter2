@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lence.bird_hunter.ui.LoginActivity">
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        android:text="Admin"
+         />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_alignStart="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_marginTop="36dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:text="Admin_imi"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_alignStart="@+id/pass"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignEnd="@+id/pass"
+        android:layout_alignRight="@+id/pass"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorAccent"
+        android:text="Войти"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/button"
+        android:text="Для корректной работы приложения необходимо дать все запрашиваемые разрешения и включить геопозиционирование" />
+</RelativeLayout>
